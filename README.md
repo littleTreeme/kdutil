@@ -1,7 +1,7 @@
 ### kdutils
 > 中后台应用工具库
 
-![Alt text](http://utils-1251306874.cos.ap-chengdu.myqcloud.com/shc-admin-utils/WX20200414-170739%402x.png)
+![Alt text](https://github.com/littleTreeme/kdutil/blob/master/example/mind.png)
 #### 安装说明
 
  ```
