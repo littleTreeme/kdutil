@@ -1,7 +1,7 @@
 ### kdutils
 > 中后台应用工具库
 
-![Alt text](https://utils-1251306874.cos.ap-chengdu.myqcloud.com/shc-admin-utils/WX20200414-170739%402x.png)
+![Alt text](http://utils-1251306874.cos.ap-chengdu.myqcloud.com/shc-admin-utils/WX20200414-170739%402x.png)
 #### 安装说明
 
  ```
@@ -12,15 +12,15 @@ npm install kdutils
 
 ```
 //方式一：
- import kdutils from 'kdutils';
+ import kdutils from 'kdutil';
 
 // 方式二
-import {http, localStorage, tools} from 'kdutils';
+import {http, localStorage, tools} from 'kdutil';
 
 // 挂载的方式
-Vue.prototype.$axios = kdutils.http;
-Vue.prototype.$localStorage= kdutils.localStorage;
-Vue.prototype.$tools = kdutils.tools;
+Vue.prototype.$axios = kdutil.http;
+Vue.prototype.$localStorage= kdutil.localStorage;
+Vue.prototype.$tools = kdutil.tools;
 ```
 
 ## 🚀 API 文档
@@ -34,7 +34,7 @@ Vue.prototype.$tools = kdutils.tools;
 - delete: 删除 localstorage
 
 ```
-import { localStorage } from 'kdutils';
+import { localStorage } from 'kdutil';
 
 localStorage.get('token');
 
@@ -53,7 +53,7 @@ localStorage.delete('token');
 - delete: 删除 sessionStorage
 
 ```
-import { sessionStorage } from 'kdutils';
+import { sessionStorage } from 'kdutil';
 
 ```
 
@@ -68,7 +68,7 @@ import { sessionStorage } from 'kdutils';
 - formatTime：格式化时间戳
 
 ```
-import { date } from 'kdutils';
+import { date } from 'kdutil';
 date.formatTime (new Date())  // 默认格式 'yyyy-MM-dd hh:mm:ss'
 date.formatTime (new Date(),'yyyy:MM:dd')  // 自定义格式 'yyyy.MM.dd'
 ```
@@ -83,7 +83,7 @@ date.formatTime (new Date(),'yyyy:MM:dd')  // 自定义格式 'yyyy.MM.dd'
 - post：post 请求方式
 
 ```
-import { http } from 'kdutils';
+import { http } from 'kdutil';
 const option = {
     url: process.env.VUE_APP_URL ,  // 根据不同环节配置初始化baseUrl
 }
@@ -98,7 +98,7 @@ export const getList = async (params = {}) => http.get(`/user/list`, { params })
 - debounce ：防抖
 
 ```
-import { tools } from 'kdutils';
+import { tools } from 'kdutil';
 methods:{
     sumbit: tools.debounce(function(){
           // todo 
@@ -130,7 +130,7 @@ methods:{
 - 初始化
 
 ``` 
- import { sentry } from 'kdutils';
+ import { sentry } from 'kdutil';
  const option = {dsn:http://753ce3bf82e94ab0aa7b5e62fae16d3c@sentry.***.com:9000/2}
  const Sentry = sentry.getInstance(Vue, option);
  Vue.prototype.$sentry = sentry;
