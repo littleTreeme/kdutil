@@ -5,7 +5,8 @@
   "author": "tree <shuxin_liu@kingdee.com>",
   "scripts": {
     "build_rollup": "rollup -c",
-    "build": "webpack --config ./build/webpack.pro.config.js"
+    "build": "webpack --config ./build/webpack.pro.config.js",
+    "test": "jest --config test/unit/jest.conf.js"
   },
   "keywords": [
     "utils",
@@ -17,7 +18,19 @@
     "raven-js": "^3.27.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "autoprefixer-loader": "^2.1.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015-rollup": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^21.2.1",
+    "normalize.css": "^8.0.1",
     "rollup": "^1.32.0",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^8.0.2",
@@ -27,16 +40,6 @@
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.4.1",
-    "webpack-merge": "^4.2.1",
-    "html-webpack-plugin": "^3.2.0",
-    "normalize.css": "^8.0.1",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "autoprefixer-loader": "^2.1.0",
-    "babel-loader": "^8.0.6",
-    "babel-preset-env": "^1.7.0"
+    "webpack-merge": "^4.2.1"
   }
 }

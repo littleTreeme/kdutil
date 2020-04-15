@@ -30,7 +30,7 @@ module.exports =  {
    * @param  fmt {string} 格式
    * @return {String}
    */
-  formatTime: function (time, fmt = 'yyyy-mm-dd hh:mm:ss') {
+  formatTime: function (time, fmt = 'yyyy-MM-dd hh:mm:ss') {
     let ret;
     let date = new Date(time);
     let opt = {
