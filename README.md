@@ -1,11 +1,11 @@
-### kdutils
+### kdutil
 > 中后台应用工具库
 
 ![Alt text](https://github.com/littleTreeme/kdutil/blob/master/example/mind.png)
 #### 安装说明
 
  ```
-npm install kdutils
+npm install kdutil
 ```
 
 #### 使用说明
