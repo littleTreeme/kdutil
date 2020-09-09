@@ -1,0 +1,21 @@
+branches:
+  only:
+    - master
+language: node_js
+
+node_js:
+  - 'v13.8.0'
+
+cache: npm
+
+before_install:
+  - git config --global user.name "littleTreeme"
+  - git config --global user.email m15919542288@163.com
+
+install:
+  - npm install
+  - npm run build
+
+script:
+  - git log | head -n 6
+  - export COMMIT=`git log | head -n 1`
